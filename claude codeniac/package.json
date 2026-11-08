@@ -1,0 +1,21 @@
+{
+  "name": "codeniac",
+  "version": "1.0.0",
+  "description": "Codeniac — hub pessoal de projetos e tarefas com assistente IA",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0"
+  }
+}

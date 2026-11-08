@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17181c">
+  <title>Codeniac — Hub de projetos</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/fonts/poppins.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal"></aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu"></button>
+        <div class="search rel" role="search">
+          <span id="searchIco" class="muted"></span>
+          <input id="searchInput" type="search" placeholder="Pesquise projetos, tarefas e notas..." autocomplete="off" aria-label="Pesquisar">
+          <span class="kbd">/</span>
+          <button class="icon-btn sm ghost" id="voiceBtn" aria-label="Pesquisa por voz"></button>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        <div class="spacer"></div>
+        <div class="rel">
+          <button class="icon-btn" id="bellBtn" aria-label="Notificações"></button>
+          <div class="dropdown" id="notifDropdown"></div>
+        </div>
+        <button class="icon-btn hide-sm" id="quickAddBtn" aria-label="Nova tarefa rápida"></button>
+        <button class="icon-btn assistant-toggle" id="assistantToggle" aria-label="Abrir assistente"></button>
+        <a href="#/profile" id="topAvatar" aria-label="Meu perfil"></a>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+
+    <aside class="assistant" id="assistant" aria-label="Assistente IA"></aside>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
